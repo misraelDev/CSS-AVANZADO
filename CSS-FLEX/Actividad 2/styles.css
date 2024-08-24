@@ -1,0 +1,26 @@
+body{
+    /*Familia de fuentes*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*Margen exterior de 0%*/
+    margin: 0%;
+}
+
+.hero{
+    /*Alinea el contenido horizontalmente al centro*/
+    align-items: center;
+    /*Alinea el contenido verticalmente al centro*/
+    background-image: url(./imagen.jpg);
+    /*Posiciona la imagen de fondo en el centro*/
+    background-position: center;
+    /*Tamaño de la imagen de fondo*/
+    background-size: cover;
+    /*Color del texto*/
+    color: white;
+    /*Altura del contendor*/
+    display: flex;
+    /*Altura del contendor*/
+    height: 400px;
+    /*Muestra el contenido en flexbox*/
+    justify-content: center;
+}
+

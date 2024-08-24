@@ -1,0 +1,54 @@
+/*
+    En este bloque de CSS, se esta definiendo
+    que el margen exterior (margin) de los elementos
+    body y menu sea de 0%. Esto significa que no
+    habr  espacio entre el borde del documento y
+    el contenido.
+*/
+
+body,
+menu{
+    /*Margen exterior de 0%*/
+    margin: 0%;
+}
+
+menu{
+    /*Color de fondo del menu*/
+    background-color: black;
+    width: 10em;
+}
+
+menu a{
+    /*Color de texto de los enlaces*/
+    color: rgb(255, 255, 255, 0.6);
+    /*Quita el subrayado de los enlaces*/
+    text-decoration: none;
+}
+
+menu a:hover{
+    /*Color de texto de los enlaces al pasar el mouse*/
+    color: red;
+}
+
+menu li{
+    /*No muestra numeros en las listas*/
+    list-style: none;
+    /*Agrega padding a los elementos de la lista*/
+    padding: 1em;
+}
+
+menu ul{
+    /*No agrega margen a la lista*/
+    margin: 0;
+    /*No agrega padding a la lista*/
+    padding: 0;
+    /*Muestra la lista en flexbox*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main{
+    /*Muestra el contenido principal en flexbox*/
+    display: flex;
+}

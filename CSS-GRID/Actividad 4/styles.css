@@ -1,0 +1,66 @@
+/*
+*   Se utiliza el color blanco para el texto del body
+*   y se centra el texto
+*/
+body{
+    color: white;
+    text-align: center;
+}
+
+/*
+*   Se define el area de la cabecera(header) con un color
+*   de fondo morado(#b96dff)
+*/
+.header{
+    grid-area: a;
+    background-color: #b96dff;
+}
+
+/*
+*   Se define el area del contenido principal(main) con un
+*   color de fondo morado(#860ff6)
+*/
+.main {
+    grid-area: b;
+    background-color: #860ff6;
+}
+
+/*
+*   Se define el area de la barra lateral (sidebar) con un
+*   color de fondo rojo(#fa2464)
+*/
+.sidebar {
+    grid-area: c;
+    background-color: #fa2464;
+}
+
+/*
+*   Se define el area del pie de pagina (footer) con un
+*   color de fondo morado(#b96dff)
+*/
+.footer {
+    grid-area: d;
+    background-color: #b96dff;
+}
+
+/*
+*   Se define el contenedor grid con un alto del 100% de la
+*   pantalla y un espacio entre los elementos de 10px.
+*   Se utiliza la funcion grid-template-areas para definir
+*   el area de cada elemento
+*/
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "a a a a"
+    "b b c c"
+    "b b c c"
+    "d d d d";
+}
+/*
+*   grid: Funcionalidad para la modificacion y uso del sitio web
+*   flex: Posicionamiento de elementos mas especificos del html
+*/
+

@@ -1,0 +1,8 @@
+/* Establecemos el contenedor grid con 3 columnas 
+   La funcion grid-template-columns permite definir el numero de columnas
+   que tendra el contenedor, en este caso 3 columnas con un ancho automatico
+*/
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

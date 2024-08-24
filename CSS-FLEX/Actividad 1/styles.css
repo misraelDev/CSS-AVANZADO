@@ -1,0 +1,26 @@
+.boxes{
+    display: flex;
+    /* Mostrar el contenido al centro */
+    /* justify-content: center; */
+    /* Mostrar el contenido al inicio */
+    justify-content: start;
+    /* Mostrar el contenido al final */
+    /* justify-content: end; */
+    /* Mostrar imagenes en forma galeria */
+    flex-wrap: wrap;
+
+}
+/*
+    Mostrar el contenido en columnas
+    1. La propiedad flex-wrap: wrap; nos permite
+       mostrar el contenido en una sola linea
+    2. La propiedad width: 25%; nos permite
+       mostrar el contenido en columnas
+    3. Se puede cambiar el valor de la propiedad
+       width para mostrar el contenido en un
+       numero de columnas diferente
+*/
+.box{
+    width: 25%;
+}
+

@@ -1,0 +1,13 @@
+/* Establecemos el contenedor grid con 4 columnas y una fila con un
+   alto de 200px, ademas de un espacio entre los elementos de 10px */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    grid-auto-rows: 200px;
+}
+
+/* Agregamos un borde a cada elemento del grid */
+.grid-item{
+    border: solid 1px
+}
