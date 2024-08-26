@@ -1,0 +1,24 @@
+/* 
+    Esta regla css se aplica solo cuando el ancho de la pantalla
+    es menor o igual a 600px. En ese caso, el fondo del body
+    sera negro.
+*/
+@media (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+}
+
+/* 
+    Esta regla css se aplica solo cuando el ancho de la pantalla
+    es menor o igual a 600px. En ese caso, el fondo del body
+    sera amarillo.
+    NOTA: Esta regla esta repetida, no es necesario tener dos
+    reglas iguales. Se puede eliminar una de ellas.
+*/
+@media (max-width: 600px) {
+    body{
+        background-color: yellow;
+    }
+}
+

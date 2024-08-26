@@ -1,0 +1,32 @@
+.grid-container{
+    display: grid;
+grid-template-columns: 150px auto 150px;
+    gap: 10px;
+    grid-template-rows: auto;
+}
+
+.grid-container > *{
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav,
+footer{
+    grid-column: 1 / span 3;
+}
+
+@media(min-width: 600px){
+    aside{
+        display: none;
+    }
+    article{
+        grid-column: 1 / span 3;
+    }
+
+    .grid-container{
+        grid-template-rows: 1fr 10fr;
+    }
+}

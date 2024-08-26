@@ -1,0 +1,26 @@
+/*
+    Estilos para un boton
+    - El fondo sera azul
+    - El texto sera blanco
+    - El padding sera de 10px en horizontal y 20px en vertical
+    - El tamano de la fuente sera de 16px
+    - No habra bordes
+    - La esquina sera redonda con un radio de 5px
+    - La transicion del fondo sera suave, tardara 1 segundo en completarse
+*/
+button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 1s ease-out;
+}
+
+/*
+    Al pasar el mouse por encima del boton, el fondo cambiara a amarillo
+*/
+button:hover{
+    background-color: yellow;
+}

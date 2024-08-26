@@ -1,0 +1,45 @@
+/* 
+    .container es un selector que apunta al elemento con clase "container"
+    y le aplica los siguientes estilos:
+    - Ancho del 100% del padre
+    - Muestra el contenido en flexbox
+    - Alinea el contenido horizontalmente al centro
+    - Alinea el contenido verticalmente al centro
+*/
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /*
+        Tama o de letra de 3em
+        Aplica la animaci n "move" infinitas veces
+        La animaci n se reproduce en sentido alterno (hacia adelante y hacia atr s)
+    */
+    font-size: 3em;
+    animation: move 2s infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes move {
+    /*
+        En el estado "from" (inicio de la animaci n) se aplica el estilo
+        transform: translate(0); que no hace nada
+    */
+    from {
+        transform: translate(0);
+    }
+    /*
+        En el estado "to" (fin de la animaci n) se aplica el estilo
+        transform: translate(200px); que mueve el texto 200px a la derecha
+    */
+    to {
+        transform: translate(200px);
+    }
+}
+
+

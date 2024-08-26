@@ -1,0 +1,60 @@
+/* 
+    .box es un selector que apunta al elemento con clase "box"
+    y le aplica los siguientes estilos:
+    - Ancho y alto de 100px
+    - Color de fondo azul
+    - La transformacion de rotar 45 grados y escalar 1.5
+      es aplicada al elemento
+    - Margen de 100px en todas las direcciones
+*/
+.box{    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: rotate(45deg) scale(1.5);
+    margin: 100px;
+}
+
+/* 
+    .box-1 es un selector que apunta al elemento con clase "box-1"
+    y le aplica los siguientes estilos:
+    - Ancho y alto de 100px
+    - Color de fondo #0ad436
+    - La transformacion de rotar 45 grados es aplicada al elemento
+    - Margen de 100px en todas las direcciones
+*/
+.box-1 {
+    width: 100px;
+    height: 100px;
+    background-color: #0ad436;
+    transform: rotate(45deg);
+    margin: 100px;
+}
+
+/* 
+    .box-2 es un selector que apunta al elemento con clase "box-2"
+    y le aplica los siguientes estilos:
+    - Ancho y alto de 100px
+    - Color de fondo #0ad436
+    - La transformacion de rotar 30 grados y escalar 1.5
+      es aplicada al elemento
+    - La transicion de escalar 2 segundos con una funcion de
+      transicion de tipo ease-in es aplicada al elemento
+    - Margen de 100px en todas las direcciones
+*/
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #0ad436;
+    transform: rotate(30deg) scale(1.5);
+    transition: scale(2) ease-in;
+    margin: 100px;
+}
+
+/* 
+    Al pasar el mouse por encima del elemento .box-2, se aplica
+    la transformacion de rotar 65 grados y escalar 2
+*/
+.box-2:hover {
+    transform: rotate(65deg) scale(2);
+}
+

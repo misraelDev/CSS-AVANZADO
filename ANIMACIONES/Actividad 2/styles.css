@@ -1,0 +1,34 @@
+/* 
+    .box es un selector que apunta al elemento con clase "box"
+    y le aplica los siguientes estilos:
+    - Ancho y alto de 100px
+    - Color de fondo azul
+    - La transicion de todos los estilos se aplica de forma lineal
+      durante 1 segundo (por defecto, es la transicion de todos los
+      estilos, pero se puede especificar que estilos se quieren afectar
+      poniendo "transition: <estilos> 1s")
+    - Color de texto blanco
+*/
+
+/* 
+    Cuando el mouse pasa por encima del elemento, se aplica el estilo
+    :hover y se cambian los siguientes estilos:
+    - Ancho y alto a 200px
+    - Color de fondo rojo
+*/
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /*transition: all 1s;*/
+    /*transition: width 1s;*/  
+  
+    transition: linear 1s;
+    color: white;
+}
+
+.box:hover{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}

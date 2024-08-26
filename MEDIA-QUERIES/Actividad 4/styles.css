@@ -1,0 +1,23 @@
+.parrafo {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
